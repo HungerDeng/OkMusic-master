@@ -1,0 +1,78 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions{
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //Android.support
+    implementation rootProject.ext.dependencies["support_v4"]
+    implementation rootProject.ext.dependencies["appcompat_v7"]
+    // fragmentation 依赖
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["fragmentation_swipeback"]
+    //rx-android-java
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxlifecycle"]
+    implementation rootProject.ext.dependencies["rxlifecycle_components"]
+    //网络请求库
+    implementation rootProject.ext.dependencies["retrofit2"]
+    implementation rootProject.ext.dependencies["adapter_rxjava"]
+    implementation rootProject.ext.dependencies["converter_fastjson_android"]
+    implementation rootProject.ext.dependencies["converter_scalars"]
+    implementation rootProject.ext.dependencies["logging_interceptor"]
+    //Log
+    implementation rootProject.ext.dependencies["logger"]
+    //RecyclerView依赖
+    implementation rootProject.ext.dependencies["recyclerview_v7"]
+    implementation rootProject.ext.dependencies["base_recycler_view_adapter_helper"]
+    implementation rootProject.ext.dependencies["recycler_view_divider"]
+    //Google AutoValue ,provided表示在编译期间存在,apk打包完成后,是被废弃的.所以不会占用apk大小
+    provided rootProject.ext.dependencies["auto_value"]
+    annotationProcessor rootProject.ext.dependencies["auto_value"]
+    //沉浸式状态栏
+    implementation(rootProject.ext.dependencies["statusBarCompat"], {
+        exclude group: 'com.android.support'
+    })
+    //动态权限处理
+    compile(rootProject.ext.dependencies["permissionsdispatcher"]) {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor rootProject.ext.dependencies["permissionsdispatcher_processor"]
+
+    /*ButterKnife依赖*/
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+    //路由通讯
+    api rootProject.ext.dependencies.arouter_api
+
+}

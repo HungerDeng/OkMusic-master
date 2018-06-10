@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="my_sheet_play_bg">#3c000000</color>
+
+    <!--GroupList 用到的-->
+    <color name="qmui_config_color_background">#F4F5F7</color>
+
+    <color name="divider">#c1c0c0</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_d">#f9f9f9</color>
+    <color name="white_d_d">#c1c0c0</color>
+    <color name="white_d_d_d">#a1a1a1</color>
+    <color name="white_d_d_d_d">#818181</color>
+
+    <color name="dark">#000000</color>
+    <color name="dark_l">#101010</color>
+    <color name="dark_l_l">#252525</color>
+    <color name="dark_l_l_l">#2d2d2d</color>
+    <color name="dark_l_l_l_l">#4e4e4e</color>
+    <color name="dark_l_l_l_l_l">#5b5b5b</color>
+
+
+    <color name="item_song_list_title">#000000de</color>
+    <color name="item_song_list_artist_size">#00000099</color>
+
+</resources>

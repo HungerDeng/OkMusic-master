@@ -1,0 +1,4 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TipNewStyle"
+           android:contentDescription="Update tips"
+    android:layout_gravity="center_vertical"/>

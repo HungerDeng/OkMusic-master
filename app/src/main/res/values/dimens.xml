@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_default_padding">6dp</dimen>
+    <dimen name="activity_default_padding_l_l">10dp</dimen>
+
+
+
+
+
+
+    <dimen name="home_tab_height">49dp</dimen>
+    <dimen name="common_content_spacing">@dimen/qmui_content_spacing_horizontal</dimen>
+
+    <dimen name="activity_default_margin">16dp</dimen>
+    <dimen name="activity_default_margin_l">18dp</dimen>
+    <dimen name="activity_default_margin_s">14dp</dimen>
+    <dimen name="activity_default_margin_s_s">12dp</dimen>
+    <dimen name="activity_default_margin_s_s_s">10dp</dimen>
+    <dimen name="activity_default_margin_half">8dp</dimen>
+    <dimen name="activity_default_margin_half_s">6dp</dimen>
+    <dimen name="activity_default_margin_2x">32dp</dimen>
+
+    <!--本地音乐-->
+    <dimen name="lm_content_height">150dp</dimen>
+    <dimen name="lm_content_bottom_height">40dp</dimen>
+    <dimen name="lm_line_width">40dp</dimen>
+    <dimen name="local_sheets_height">50dp</dimen>
+    <dimen name="local_sheets_image_height">90dp</dimen>
+    <dimen name="list_top_height">300dp</dimen>
+    <dimen name="list_top_nav_height">70dp</dimen>
+    <dimen name="list_bottom_nav_height">60dp</dimen>
+    <dimen name="my_sheets_item_image_width">100dp</dimen>
+    <dimen name="my_sheets_item_image_height">80dp</dimen>
+
+
+
+    <!--TextSize-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_small_s">10sp</dimen>
+    <dimen name="text_small_s_s">8sp</dimen>
+    <dimen name="text_middle_s">14sp</dimen>
+    <dimen name="text_middle">16sp</dimen>
+    <dimen name="text_middle_l">18sp</dimen>
+    <dimen name="text_middle_l_l">20sp</dimen>
+    <dimen name="text_large_s">22sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_large_l">26sp</dimen>
+    <dimen name="text_large_l_l">28sp</dimen>
+    <dimen name="text_large_l_l_l">30sp</dimen>
+
+
+    <dimen name="common_bar_height">56dp</dimen>
+    <dimen name="bottom_control_height">56dp</dimen>
+    <dimen name="photo_wall_height">400dp</dimen>
+
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="item_song_list_height">72dp</dimen>
+    <dimen name="item_song_list_icon_margin">16dp</dimen>
+    <dimen name="item_song_list_icon_width_height">40dp</dimen>
+    <dimen name="item_song_list_more_width_height">24dp</dimen>
+    <dimen name="item_song_list_more_margin_top">24dp</dimen>
+    <dimen name="item_song_list_more_margin_left_right">16dp</dimen>
+    <dimen name="item_song_list_title_size">16dp</dimen>
+    <dimen name="item_song_list_artist_size">14dp</dimen>
+
+</resources>

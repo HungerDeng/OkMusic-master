@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--**************** QMUITabSegment ******************-->
+    <declare-styleable name="QMUITabSegment">
+        <attr name="qmui_tab_indicator_height" format="dimension"/>
+        <attr name="qmui_tab_has_indicator" format="boolean"/>
+        <attr name="android:textSize"/>
+        <attr name="qmui_tab_indicator_top" format="boolean"/>
+        <attr name="qmui_tab_mode" format="enum">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+        <attr name="qmui_tab_space" format="dimension"/>
+        <attr name="qmui_tab_icon_position" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="qmui_tab_typeface_provider" format="string"/>
+    </declare-styleable>
+    <attr name="QMUITabSegmentStyle" format="reference"/>
+
+
+    <!--**********************************************
+*                  qmui tabSegment              *
+***********************************************-->
+    <attr name="qmui_tab_sign_count_view" format="reference"/>
+    <attr name="qmui_tab_sign_count_view_minSize" format="dimension"/>
+    <attr name="qmui_tab_sign_count_view_minSize_with_text" format="dimension"/>
+    <attr name="qmui_tab_sign_count_view_bg" format="reference"/>
+    <attr name="qmui_tab_sign_count_view_padding_horizontal" format="dimension"/>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<resources>
+
+    <!--********************* TabSegment *********************-->
+    <style name="TabSegment">
+        <item name="qmui_tab_has_indicator">false</item>
+        <item name="qmui_tab_indicator_height">@dimen/qmui_tab_segment_indicator_height</item>
+        <item name="android:textSize">@dimen/qmui_tab_segment_text_size</item>
+        <item name="qmui_tab_indicator_top">false</item>
+        <item name="qmui_tab_icon_position">left</item>
+    </style>
+
+    <style name="qmui_tab_sign_count_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/qmui_tab_sign_count_view_minSize</item>
+        <item name="android:background">?attr/qmui_tab_sign_count_view_bg</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/qmui_config_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">?attr/qmui_tab_sign_count_view_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/qmui_tab_sign_count_view_padding_horizontal</item>
+        <item name="android:minWidth">?attr/qmui_tab_sign_count_view_minSize</item>
+        <item name="android:minHeight">?attr/qmui_tab_sign_count_view_minSize</item>
+    </style>
+
+</resources>

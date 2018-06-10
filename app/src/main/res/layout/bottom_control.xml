@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_control_fragment"
+    android:name="com.gdut.dkmfromcg.okmusic.ui.bottomControl.BottomControlFragment"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_control_height"
+    android:layout_gravity="bottom">
+
+</fragment>

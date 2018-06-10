@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<resources>
+
+    <!--********************* Tip *********************-->
+    <!-- 提示更新小圆点 -->
+    <style name="TipPointStyle">
+        <item name="android:layout_width">@dimen/qmui_tips_point_size</item>
+        <item name="android:layout_height">@dimen/qmui_tips_point_size</item>
+        <item name="android:background">@drawable/qmui_tips_point</item>
+    </style>
+
+    <!-- 提示更新new -->
+    <style name="TipNewStyle">
+        <item name="android:layout_width">@dimen/tip_width</item>
+        <item name="android:layout_height">@dimen/tip_Height</item>
+        <item name="android:background">@drawable/qmui_icon_tip_new</item>
+    </style>
+
+
+
+    <!--一旦设置了defStyleAttr,就不会读取 defStyleRes-->
+    <style name="CommonListItemView_defStyleAttr">
+        <item name="android:paddingLeft">@dimen/qmui_content_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/qmui_content_padding_horizontal</item>
+        <item name="android:background">@drawable/qmui_s_list_item_bg_with_border_none</item>
+
+        <item name="qmui_accessory_type">none</item>
+        <item name="qmui_commonList_titleColor">@color/qmui_config_color_gray_1</item>
+        <item name="qmui_commonList_detailColor">@color/qmui_config_color_gray_5</item>
+        <item name="qmui_common_list_item_chevron">@drawable/qmui_icon_chevron</item>
+    </style>
+
+    <style name="CommonListItemView_defStyleRes">
+        <item name="qmui_accessory_type">none</item>
+        <item name="qmui_commonList_titleColor">@color/qmui_config_color_gray_1</item>
+        <item name="qmui_commonList_detailColor">@color/qmui_config_color_gray_5</item>
+        <item name="qmui_common_list_item_chevron">@drawable/qmui_icon_chevron</item>
+    </style>
+
+
+    <style name="GroupListSectionView_defStyleAttr">
+        <item name="android:paddingLeft">@dimen/qmui_content_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/qmui_content_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/qmui_group_list_section_header_footer_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/qmui_group_list_section_header_footer_padding_vertical</item>
+    </style>
+
+</resources>

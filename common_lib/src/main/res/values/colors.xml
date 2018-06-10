@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="qmui_drawable_color_list_separator">#DEE0E2</color>
+    <color name="qmui_drawable_color_list_pressed">#DEE0E2</color>
+    <color name="qmui_config_color_white">#ffffff</color>
+
+    <color name="qmui_config_color_gray_1">#353C46</color>
+    <color name="qmui_config_color_gray_3">#5D646E</color>
+    <color name="qmui_config_color_gray_5">#858C96</color>
+
+    <color name="qmui_config_color_red">#FA3A3A</color>
+    <color name="qmui_config_color_blue">#1B88EE</color>
+</resources>

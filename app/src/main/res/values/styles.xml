@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--GroupList的defStyleAttr,可以不设置,但是不设置会造成布局参数采用默认值-->
+        <!--一旦设置了defStyleAttr,就不会读取 defStyleRes-->
+        <item name="QMUIGroupListSectionViewStyle">@style/GroupListSectionView_defStyleAttr</item>
+        <item name="QMUICommonListItemViewStyle">@style/CommonListItemView_defStyleAttr</item>
+        <!--可重写,有默认值-->
+        <item name="qmui_list_item_height">@dimen/qmui_list_item_height</item>
+        <item name="qmui_list_item_height_higher">@dimen/qmui_list_item_height_higher</item>
+
+
+        <!--TabSegment-->
+        <item name="QMUITabSegmentStyle">@style/TabSegment</item>
+        <item name="qmui_tab_sign_count_view">@style/qmui_tab_sign_count_view</item>
+        <item name="qmui_tab_sign_count_view_minSize">@dimen/qmui_tab_sign_count_view_minSize</item>
+        <item name="qmui_tab_sign_count_view_minSize_with_text">@dimen/qmui_tab_sign_count_view_minSize_with_text</item>
+        <item name="qmui_tab_sign_count_view_bg">@drawable/qmui_sign_count_view_bg</item>
+        <item name="qmui_tab_sign_count_view_padding_horizontal">4dp</item>
+
+    </style>
+
+
+
+
+</resources>

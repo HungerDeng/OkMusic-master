@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sheets_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_default_margin"
+        android:layout_weight="0.3"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="3dp">
+
+        <FrameLayout
+            android:layout_width="@dimen/my_sheets_item_image_width"
+            android:layout_height="@dimen/my_sheets_item_image_height">
+
+            <ImageView
+                android:id="@+id/sheets_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_album" />
+
+            <com.gdut.dkmfromcg.okmusic.widget.media.PlayView
+                android:background="@color/my_sheet_play_bg"
+                android:id="@+id/sheets_item_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotation="180"
+                app:strokeWidth="0dp"
+                android:padding="8dp"
+                app:triangleHollow="true"
+                app:triangleRadius="5dp"
+                app:triangleStroke="3dp" />
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.56"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sheets_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sheets_item_remark"
+            android:layout_marginBottom="@dimen/activity_default_margin_s_s"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:textSize="@dimen/text_middle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sheets_item_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/sheets_item_name"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:textSize="@dimen/text_small"
+            android:layout_alignLeft="@id/sheets_item_name" />
+
+        <TextView
+            android:id="@+id/sheets_item_song_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/sheets_item_name"
+            android:layout_below="@id/sheets_item_remark"
+            android:layout_marginTop="@dimen/activity_default_margin_s_s"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:textSize="@dimen/text_small_s"
+            android:layout_alignLeft="@id/sheets_item_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/activity_default_margin_s_s"
+            android:id="@+id/sheets_item_play_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sheets_item_song_count"
+            android:layout_toEndOf="@id/sheets_item_song_count"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:textSize="@dimen/text_small_s"
+            android:layout_marginLeft="@dimen/activity_default_margin_s_s"
+            android:layout_toRightOf="@id/sheets_item_song_count" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:paddingRight="10dp"
+        android:id="@+id/sheets_item_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.14"
+        android:background="#00ffffff"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+</LinearLayout>

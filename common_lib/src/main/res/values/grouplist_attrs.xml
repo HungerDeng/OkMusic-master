@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--**********************************************
+*             qmui list item bg                  *
+**********************************************-->
+
+    <attr name="qmui_list_item_height" format="dimension" />
+    <attr name="qmui_list_item_height_higher" format="dimension" />
+
+    <!--************** QMUIGroupListView **************-->
+    <attr name="QMUIGroupListViewStyle" format="reference"/>
+    <declare-styleable name="QMUIGroupListView">
+        <attr name="separatorStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="none" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="QMUICommonListItemViewStyle" format="reference"/>
+    <declare-styleable name="QMUICommonListItemView">
+        <attr name="qmui_orientation" />
+        <attr name="qmui_accessory_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="chevron" value="1" />
+            <enum name="switcher" value="2" />
+            <enum name="custom" value="3" />
+        </attr>
+        <attr name="qmui_commonList_titleColor" format="color" />
+        <attr name="qmui_commonList_detailColor" format="color" />
+        <attr name="qmui_common_list_item_chevron" format="integer"/>
+    </declare-styleable>
+
+
+    <attr name="QMUIGroupListSectionViewStyle" format="reference"/>
+
+
+</resources>

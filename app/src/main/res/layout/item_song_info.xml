@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_song_list_height"
+    android:orientation="horizontal">
+
+    <android.support.v4.widget.CircleImageView
+        android:id="@+id/iv_singer"
+        android:layout_width="@dimen/item_song_list_icon_width_height"
+        android:layout_height="@dimen/item_song_list_icon_width_height"
+        android:layout_margin="@dimen/item_song_list_icon_margin"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:layout_width="@dimen/item_song_list_more_width_height"
+                android:layout_height="@dimen/item_song_list_more_width_height"
+                android:layout_marginTop="@dimen/item_song_list_more_margin_top"
+                android:layout_marginLeft="@dimen/item_song_list_more_margin_left_right"
+                android:layout_marginRight="@dimen/item_song_list_more_margin_left_right"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
